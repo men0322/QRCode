@@ -1,0 +1,47 @@
+/*
+ Localizable.strings
+ Expo
+ 
+ Created by Tsuzuki Takayuki on 9/24/18.
+ Copyright © 2018 Money Forward, Inc. All rights reserved.
+ */
+
+// MARK: - Common
+"common.next" = "次へ";
+"common.back" = "戻る";
+"common.cancel" = "キャンセル";
+"common.send" = "送信";
+"common.ok" = "OK";
+
+// MARK: - Alert
+"sendcoin.alert.title" = "MFコインを送る";
+"sendcoin.alert.message" = "%@に送るコインの額を入力してください。";
+
+
+// MARK: - API Error
+"api.error.unknown" = "コード ";
+"api.error.invalidResponseData" = "サーバからのデータが正しくありません。";
+"api.error.unknown" = "不明なエラー";
+"api.no.internet.title" = "インターネットに接続できません";
+"api.no.internet.message" = "通信状況を確認し再度お試しください";
+"api.failed.message" = "通信エラーが発生しました。時間をおいて再度お試しください。";
+"api.error.title" = "データの送信に失敗しました";
+
+
+// MARK: - AUTHENTICATION
+"authentication.error.biometryNotAvailable" = "Authentication could not start because the user has not enrolled in biometric authentication.";
+"authentication.title.signas" = "Sign in as";
+"authentication.title.resetMessage" = "Please authenticate to proceed";
+"authentication.error.authenticate" = "The context is invalid";
+
+// MARK: - PASSCODE
+"passcode.title.fillPass" = "Enter passcode";
+"passcode.title.confirmPass" = "Confirm passcode";
+"passcode.title.alert.biometric" = "Biometric Authentication";
+"passcode.message.alert.biometric" = "Do you want store passcode to Biometric Authentication";
+"passcode.text.yes" = "Yes";
+"passcode.text.noThanks" = "No, Thanks!";
+
+//MARK: - SETTINGS
+"setting.calculator.mode.useCalculator" = "Calcualtor";
+"setting.calculator.mode.useNumberPad" = "Number Pad";

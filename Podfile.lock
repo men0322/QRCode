@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (4.8.1)
+  - ObjectMapper (3.4.2)
+  - R.swift (5.0.2):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
+  - Realm (3.18.0):
+    - Realm/Headers (= 3.18.0)
+  - Realm/Headers (3.18.0)
+  - RealmSwift (3.18.0):
+    - Realm (= 3.18.0)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - SwiftLint (0.31.0)
+  - Then (2.4.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper
+  - R.swift
+  - RealmSwift (~> 3.18.0)
+  - RxCocoa
+  - RxSwift
+  - SwiftLint
+  - Then
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ObjectMapper
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SwiftLint
+    - Then
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
+  RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+
+PODFILE CHECKSUM: 8e40e628cc1f1cace6c1a49b36212ae9fda6593b
+
+COCOAPODS: 1.7.5

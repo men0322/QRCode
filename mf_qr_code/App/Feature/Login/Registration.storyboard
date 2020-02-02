@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V3T-wY-HCW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BVZ-bT-Ggi">
+            <objects>
+                <navigationController id="V3T-wY-HCW" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="hpA-kT-5Nw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k07-2M-YZV" kind="relationship" relationship="rootViewController" id="oBq-hh-CLw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaQ-un-927" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482" y="145"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Jyd-bo-Iaj">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="k07-2M-YZV" customClass="LoginViewController" customModule="mf_qr_code" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oTX-f9-HtK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6b-G0-cQs">
+                                <rect key="frame" x="54.5" y="213" width="266" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3WH-Th-P6P"/>
+                                    <constraint firstAttribute="width" constant="266" id="yEb-HA-A4A"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="k07-2M-YZV" eventType="touchUpInside" id="hWf-C4-K7W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-sk-h8N">
+                                <rect key="frame" x="54.5" y="276" width="266" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="UZv-Gw-rr5"/>
+                                    <constraint firstAttribute="height" constant="30" id="hAt-na-3Pu"/>
+                                </constraints>
+                                <state key="normal" title="signup"/>
+                                <connections>
+                                    <segue destination="eq5-TR-7AV" kind="show" id="NiI-UO-N3u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f9W-sk-h8N" firstAttribute="centerX" secondItem="WOq-Vg-ffD" secondAttribute="centerX" id="GBy-RI-shz"/>
+                            <constraint firstItem="t6b-G0-cQs" firstAttribute="top" secondItem="WOq-Vg-ffD" secondAttribute="top" constant="213" id="PDl-SV-BaK"/>
+                            <constraint firstItem="t6b-G0-cQs" firstAttribute="centerX" secondItem="WOq-Vg-ffD" secondAttribute="centerX" id="TGa-Ky-iD7"/>
+                            <constraint firstItem="f9W-sk-h8N" firstAttribute="top" secondItem="t6b-G0-cQs" secondAttribute="bottom" constant="33" id="Xeo-WP-Sax"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WOq-Vg-ffD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SPt-qE-yGM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsW-Ua-Bd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312.80000000000001" y="144.3778110944528"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NJc-Gf-3SZ">
+            <objects>
+                <viewController id="eq5-TR-7AV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="600-7s-YHk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFh-gc-QXf">
+                                <rect key="frame" x="194" y="153" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.7843137255" green="0.86666666670000003" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7EZ-nS-D3q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbS-Zn-VdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="144"/>
+        </scene>
+    </scenes>
+</document>

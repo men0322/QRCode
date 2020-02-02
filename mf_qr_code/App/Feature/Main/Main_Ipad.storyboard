@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GYa-1g-jrJ">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Azl-wR-hBE">
+            <objects>
+                <navigationController id="GYa-1g-jrJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cTw-eE-SNZ">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hhz-Ij-HOg" kind="relationship" relationship="rootViewController" id="u1o-az-qHh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ClD-Io-cYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444" y="26"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="cio-fc-aJe">
+            <objects>
+                <viewController storyboardIdentifier="IpadMainViewController" id="hhz-Ij-HOg" customClass="IpadMainViewController" customModule="mf_qr_code" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OP4-G0-0qZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjJ-OZ-i1L">
+                                <rect key="frame" x="0.0" y="74" width="1024" height="636"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flc-q6-pYp" customClass="QRCodeView" customModule="mf_qr_code" customModuleProvider="target">
+                                        <rect key="frame" x="312" y="118" width="400" height="400"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Flc-q6-pYp" secondAttribute="height" multiplier="1:1" id="pP4-3B-BEc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Flc-q6-pYp" secondAttribute="bottom" constant="118" id="NY6-Fm-Lj9"/>
+                                    <constraint firstItem="Flc-q6-pYp" firstAttribute="centerX" secondItem="cjJ-OZ-i1L" secondAttribute="centerX" id="UKj-eL-oa3"/>
+                                    <constraint firstItem="Flc-q6-pYp" firstAttribute="top" secondItem="cjJ-OZ-i1L" secondAttribute="top" constant="118" id="cHZ-HQ-Ug3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xro-2S-Zqx">
+                                <rect key="frame" x="0.0" y="710" width="1024" height="636"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oj-aW-Ert">
+                                        <rect key="frame" x="0.0" y="0.0" width="1016" height="165"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="165" id="HEp-ag-OIp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHk-dN-xVv" customClass="CalculatorView" customModule="mf_qr_code" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="173" width="1024" height="463"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj0-Fy-KBQ" customClass="CustomNumberPad" customModule="mf_qr_code" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="173" width="1024" height="463"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xj0-Fy-KBQ" firstAttribute="leading" secondItem="xro-2S-Zqx" secondAttribute="leading" id="0gK-lB-E5o"/>
+                                    <constraint firstItem="yHk-dN-xVv" firstAttribute="top" secondItem="xro-2S-Zqx" secondAttribute="top" constant="173" id="FVk-Hb-wuR"/>
+                                    <constraint firstAttribute="trailing" secondItem="yHk-dN-xVv" secondAttribute="trailing" id="Ivn-1H-ned"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xj0-Fy-KBQ" secondAttribute="trailing" id="Lyl-e6-H6z"/>
+                                    <constraint firstItem="Xj0-Fy-KBQ" firstAttribute="top" secondItem="4oj-aW-Ert" secondAttribute="bottom" constant="8" id="OKq-Ws-1YG"/>
+                                    <constraint firstItem="4oj-aW-Ert" firstAttribute="leading" secondItem="xro-2S-Zqx" secondAttribute="leading" id="UGz-dK-2ND"/>
+                                    <constraint firstItem="4oj-aW-Ert" firstAttribute="top" secondItem="xro-2S-Zqx" secondAttribute="top" id="UwM-Bc-GAx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xj0-Fy-KBQ" secondAttribute="bottom" id="b0K-7B-KJb"/>
+                                    <constraint firstAttribute="trailing" secondItem="4oj-aW-Ert" secondAttribute="trailing" constant="8" id="bOp-ey-qwg"/>
+                                    <constraint firstItem="yHk-dN-xVv" firstAttribute="leading" secondItem="xro-2S-Zqx" secondAttribute="leading" id="gI7-bj-OYe"/>
+                                    <constraint firstAttribute="bottom" secondItem="yHk-dN-xVv" secondAttribute="bottom" id="yZG-Qf-j54"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xro-2S-Zqx" firstAttribute="height" secondItem="cjJ-OZ-i1L" secondAttribute="height" id="0PX-tq-rqg"/>
+                            <constraint firstItem="xro-2S-Zqx" firstAttribute="bottom" secondItem="jlf-D2-Vp1" secondAttribute="bottom" id="BOU-aX-IyQ"/>
+                            <constraint firstItem="cjJ-OZ-i1L" firstAttribute="top" secondItem="jlf-D2-Vp1" secondAttribute="top" id="Da2-Nm-eV1"/>
+                            <constraint firstItem="xro-2S-Zqx" firstAttribute="trailing" secondItem="jlf-D2-Vp1" secondAttribute="trailing" id="Oh7-XG-Ik5"/>
+                            <constraint firstItem="cjJ-OZ-i1L" firstAttribute="leading" secondItem="jlf-D2-Vp1" secondAttribute="leading" id="Wjr-Jq-W7U"/>
+                            <constraint firstItem="xro-2S-Zqx" firstAttribute="leading" secondItem="jlf-D2-Vp1" secondAttribute="leading" id="fhn-vm-bRd"/>
+                            <constraint firstItem="xro-2S-Zqx" firstAttribute="top" secondItem="cjJ-OZ-i1L" secondAttribute="bottom" id="hWa-M6-A1O"/>
+                            <constraint firstItem="cjJ-OZ-i1L" firstAttribute="trailing" secondItem="jlf-D2-Vp1" secondAttribute="trailing" id="nIc-bk-Rrl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jlf-D2-Vp1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="8Ra-00-4KY">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="6S0-TZ-rah">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nc8-bd-DND">
+                                <rect key="frame" x="20" y="10" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="Qxl-rF-HYD" kind="show" id="pYs-2m-EGJ"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="YG4-Hr-PGG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wra-4m-Z1P">
+                                <rect key="frame" x="928" y="10" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
+                                <state key="normal" title="QRCode"/>
+                            </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calculatorView" destination="yHk-dN-xVv" id="eQ7-YE-Bhr"/>
+                        <outlet property="customNumberPadView" destination="Xj0-Fy-KBQ" id="JXv-2a-QFK"/>
+                        <outlet property="qrCodeButton" destination="Wra-4m-Z1P" id="K1l-8g-jGR"/>
+                        <outlet property="qrCodeView" destination="Flc-q6-pYp" id="hiT-QO-l10"/>
+                        <outlet property="valueLabel" destination="4oj-aW-Ert" id="Xqf-hH-EDK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYJ-Vd-Ueg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212.6953125" y="262.66471449487551"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="n56-Jx-I3C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" id="Qxl-rF-HYD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tze-5b-Osx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="-326"/>
+        </scene>
+    </scenes>
+</document>
